@@ -1,0 +1,7 @@
+.modulesRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 8px; /* Reduces both row and column gap */
+  row-gap: 8px; /* You can also adjust the row gap separately if needed */
+  justify-content: center ;
+}

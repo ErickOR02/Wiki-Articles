@@ -1,5 +1,5 @@
 import styles from "./Modules.module.css";
-import IcoViajes from "../assets/IcoViajes.png";
+import IcoViajes from "../assets/IcoUnidades.svg";
 
 function Modules() {
   return (
@@ -9,16 +9,14 @@ function Modules() {
         <h2 className={styles.moduleTitle}>Unidades</h2>
       </div>
       <div className={styles.moduleText}>
-        <p>¿Como está organizada la información</p>
-        <p>Agregar elementos a los catalogos</p>
-        <p>Cancelar, Reprogramar y Terminar viaje</p>
-        <p>Creación viaje manual</p>
-        <p>Creación viaje por Layout</p>
-        <p>Editar asignación</p>
-        <p>Editar detalles de viaje</p>
-        <p>Editar ruta</p>
-        <p>Filtros</p>
-        <p>Tabs del Módulo de viajes</p>
+      <p><a href="#" rel="noopener noreferrer">
+        Crear unidades</a></p>  
+        <p><a href="#" rel="noopener noreferrer">
+        Describir vista</a></p>
+        <p><a href="#" rel="noopener noreferrer">
+        Detalle de las unidades</a></p>
+        <p><a href="#" rel="noopener noreferrer">
+        Importar unidades</a></p> 
       </div> 
     </div>
   );

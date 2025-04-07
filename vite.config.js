@@ -3,7 +3,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    postcss: "./postcss.config.cjs", // Explicitly specify the PostCSS config file
+  server: {
+    hmr: {
+      exclude: ['**/Modules/Viajes-module.jsx'],  // Ensure the correct file extension
+    },
   },
 });

@@ -1,4 +1,3 @@
-// import Card from './Card.jsx'
 import ModulesA from '../Modules/Alertas-module.jsx'
 import ModulesC from '../Modules/Configuracion-module.jsx'
 import ModulesU from '../Modules/Unidades-module.jsx'

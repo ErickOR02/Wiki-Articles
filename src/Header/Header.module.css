@@ -11,10 +11,13 @@ h1 {
   font-family: "Inter", sans-serif;
 }
 
-h2 {
+h2 {  
   font-size: 25.5px;
   font-family: "Inter", sans-serif;
   color: #1A1C21;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -22,6 +25,7 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 400px;
   color: #343741;
+  margin-bottom: 24px;
 
 }
 
@@ -33,5 +37,7 @@ p {
 }
 
 .headerDark {
-  margin-top: -8px;
+  height: 48px;
+  width: 1440px;
+  background-color: #25282F;
 }

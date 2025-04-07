@@ -1,15 +1,16 @@
-import Allmodules from './Allmodules/Allmodules.jsx'
-import Header from './Header/Header.jsx'
+import RouterComponent from './Modules/RouterComponent.jsx';
+import Home from './pages/Home.jsx'
 
 function App() { 
   return (
     <>
-      <Header />
-      <Allmodules />
-    </>
+      <RouterComponent />
+      <RouterArticles />
+      </>
   );
 
 }
+
 
 
 

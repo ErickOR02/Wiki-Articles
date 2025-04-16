@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import headerImg from '../assets/Mesa-de-trabajo.png';
 import styles from './Header.module.css';
 import CustomSearchBar from "../searchBar";
-import { articles } from '../Modules/RouterArticles.jsx';
+import { articles } from '../Modules/RoutToArticles.jsx';
 
 function Header() {
   const [search, setSearch] = useState("");
@@ -24,7 +24,6 @@ function Header() {
         <CustomSearchBar search={search} setSearch={setSearch} /> 
       </div>
       
-      <h2>Todos los artículos</h2>
       {search && (
         <div>
           {filteredLinks.length > 0 ? (

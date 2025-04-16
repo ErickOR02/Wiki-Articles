@@ -1,24 +1,20 @@
-// RouterArticles.jsx
 import React from 'react';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'; // Link for navigation
+import { Route, Routes } from 'react-router-dom'; 
 import Home from '../pages/Home';
-import AlertasEjemplo from '../pages/AlertasEjemplo';
-//import Modules from './Alertas-module';
 import ArticlesEX from '../Articles/Articles';
+import ArticleDetails from '../Modules/ArticleDetails'; // Component to handle dynamic articles
 
 function RouterComponent() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mi-otro-componente-de-articulo" element={<AlertasEjemplo/>} /> 
-        <Route path="/CEOLI" element={<ArticlesEX/>} />
-        <Route path="/AEALC" element={<ArticlesEX/>} />
+        <Route path="/CEOLI" element={<ArticlesEX />} />
+        <Route path="/CDVM" element={<ArticlesEX />} />
+        <Route path="/CRTV" element={<ArticlesEX />} />
+
+        <Route path="/articles/:articleName" element={<ArticleDetails />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
 export default RouterComponent;
-
-//Agregar paths en "Routes"

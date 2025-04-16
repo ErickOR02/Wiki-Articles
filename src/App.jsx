@@ -1,12 +1,13 @@
+import { BrowserRouter as Router } from 'react-router-dom';
 import RouterComponent from './Modules/RouterComponent.jsx';
-import Home from './pages/Home.jsx'
+// import RouterArticles from './Modules/RouterArticles.jsx';
+// import Home from './pages/Home.jsx'
 
 function App() { 
   return (
-    <>
+    <Router>
       <RouterComponent />
-      <RouterArticles />
-      </>
+      </Router>
   );
 
 }

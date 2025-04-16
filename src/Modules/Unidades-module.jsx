@@ -1,23 +1,22 @@
 import styles from "./Modules.module.css";
-import IcoViajes from "../assets/IcoUnidades.svg";
+import IcoUnidades from "../assets/IcoUnidades.svg";
+import { useNavigate } from 'react-router-dom';
 
 function Modules() {
+  const navigate = useNavigate()
   return (
     <div className={styles.module}>
       <div className={styles.headerModule}>
-        <img src={IcoViajes} alt="" />
-        <h2 className={styles.moduleTitle}>Unidades</h2>
+        <img src={IcoUnidades} alt="" />
+        <h2 className={styles.moduleTitle}>Módulo de Unidades</h2>
       </div>
-      <div className={styles.moduleText}>
-      <p><a href="#" rel="noopener noreferrer">
-        Crear unidades</a></p>  
-        <p><a href="#" rel="noopener noreferrer">
-        Describir vista</a></p>
-        <p><a href="#" rel="noopener noreferrer">
-        Detalle de las unidades</a></p>
-        <p><a href="#" rel="noopener noreferrer">
-        Importar unidades</a></p> 
-      </div> 
+      <div className={styles.moduleText}
+      style={{ cursor: 'pointer' }}>
+
+        <p><a onClick={() => {navigate('/articles/como-importar-unidades')}} >
+        ¿Como importar unidades?
+        </a></p>  
+      </div>
     </div>
   );
 }

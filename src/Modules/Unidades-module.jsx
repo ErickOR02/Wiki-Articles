@@ -8,12 +8,12 @@ function Modules() {
     <div className={styles.module}>
       <div className={styles.headerModule}>
         <img src={IcoUnidades} alt="" />
-        <h2 className={styles.moduleTitle}>Módulo de Unidades</h2>
+        <h2 className={styles.moduleTitle}>Unidades</h2>
       </div>
       <div className={styles.moduleText}
       style={{ cursor: 'pointer' }}>
 
-        <p><a className="hover:underline hover:text-blue-500" onClick={() => {navigate('/articles/como-importar-unidades')}} >
+        <p><a className="hover:underline hover:text-blue-800 text-blue-700" onClick={() => {navigate('/articles/como-importar-unidades')}} >
         ¿Como importar unidades?
         </a></p>  
       </div>

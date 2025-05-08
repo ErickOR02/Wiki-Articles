@@ -16,7 +16,7 @@ function ArticuloCRTV() {
     return (
       <>
         <Header />
-        <BreadcrumbNav />
+        <div className='ml-44'> <BreadcrumbNav  /> </div>
         <div className='flex flex-col'>
         <h1 id='Inicio' className='text-center'> Cancelar, Reprogramar y Terminar un viaje. </h1>
         <h2 className='ml-48'> <strong> Resumen del artículo. </strong></h2>

@@ -22,7 +22,7 @@ function ArticuloCAYCA() {
     return (
       <>
         <Header />
-        <BreadcrumbNav />
+        <div className='ml-44'> <BreadcrumbNav  /> </div>
         <div className='flex flex-col'>
         <h1 id='Inicio' className='text-center'>¿Cómo agregar y configurar mis alertas? </h1>
         <h2 className='ml-48'>Resumen del artículo.</h2>

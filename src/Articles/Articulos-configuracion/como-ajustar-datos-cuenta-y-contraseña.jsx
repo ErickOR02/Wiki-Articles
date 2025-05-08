@@ -16,7 +16,7 @@ function ArticuloCADCC() {
     return (
       <>
         <Header />
-        <BreadcrumbNav />
+        <div className='ml-44'> <BreadcrumbNav  /> </div>
         <div className='flex flex-col'>
         <h1 id='Inicio' className='text-center'>¿Cómo ajustar los datos de tu cuenta y <br />
         cambiar tu contraseña?  </h1>

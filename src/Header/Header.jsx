@@ -17,7 +17,7 @@ function Header() {
     <div className={styles.header}>
       
       <img className={styles.Logo} src={headerImg} alt="Tramo Logo" />
-      <h1 className="titleText">Base de conocimiento de Tramo</h1>
+      <h1 className="titleText">Biblioteca de artículos.</h1>
       <p>Encuentra información de ayuda relacionada con nuestra plataforma</p>
       
       <div className={styles.searchBar}> 

@@ -8,12 +8,12 @@ function Modules() {
     <div className={styles.module}>
       <div className={styles.headerModule}>
         <img src={IcoAlertas} alt="" />
-        <h2 className={styles.moduleTitle}>Módulo de Alertas</h2>
+        <h2 className={styles.moduleTitle}>Alertas</h2>
       </div>
       <div className={styles.moduleText}
       style={{ cursor: 'pointer' }}>
 
-        <p><a className="hover:underline hover:text-blue-500" onClick={() => {navigate('/articles/como-ver-una-alerta-atenderla-y-agregar-un-comentario')}} >
+        <p><a className="hover:underline hover:text-blue-800 text-blue-700" onClick={() => {navigate('/articles/como-ver-una-alerta-atenderla-y-agregar-un-comentario')}} >
           ¿Cómo ver una alerta, atenderla y agregar un comentario?
         </a></p>  
       </div>

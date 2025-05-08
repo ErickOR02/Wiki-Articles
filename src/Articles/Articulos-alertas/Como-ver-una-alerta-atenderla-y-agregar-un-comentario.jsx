@@ -1,6 +1,9 @@
 
 import Header from '../../Header/Header.jsx'
 import BreadcrumbNav from '../../Header/Breadcrumb.jsx';
+import HomeBttn from '../../Header/HomeButton.jsx';
+
+
 
 import AgregarComnt1 from '../../assets/Imagenes-articulos/M-Alertas/Como ver una alerta/Agregar comentario 1.png'
 import AgregarComnt2 from '../../assets/Imagenes-articulos/M-Alertas/Como ver una alerta/Agregar comentario 2.png'
@@ -17,11 +20,12 @@ function ArticuloCVUA() {
     return (
       <>
         <Header />
-        <BreadcrumbNav />
+        <div className='ml-[108px]'> <BreadcrumbNav  /> </div>
+        <div className='ml-[125px] w-[1024px] h-[190px] bg-gray-600'> </div>
         <div className='flex flex-col'>
-        <h1 id='Inicio' className='text-center'>Como ver una alerta, atenderla y agregar comentarios? </h1>
-        <h2 className='ml-48'>Resumen del artículo.</h2>
-        <p className='ml-48'>En este articulo aprenderás a como poder ver, atender y agregar alertas dentro de la pestaña “Alertas por viaje” <br />
+        <h1 id='Inicio' className='ml-32'>Como ver una alerta, atenderla y agregar comentarios? </h1>
+        <h2 className='ml-32'>Resumen del artículo.</h2>
+        <p className='ml-32'>En este articulo aprenderás a como poder ver, atender y agregar alertas dentro de la pestaña “Alertas por viaje” <br />
         del Módulo de alertas de Tramo. </p>
         <p className='ml-48'> Esto será útil para poder ver el contenido de las alertas que puedan llegar sobre un viaje, como poder atenderlas <br />
         con evidencia y como poder ver y agregar un comentario sobre la misma.  </p>
@@ -59,7 +63,8 @@ function ArticuloCVUA() {
           <li className="mb-2">Estatus</li>
           <li className="mb-2">Situación</li>
           <li className="mb-2">Evidencia</li>
-        </ol>
+        </ol> <br />
+
         <img src={AtenderAlerta1} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
         <p className='ml-48'>Llena los campos de acuerdo con la información que tengas y tendrás dos opciones; </p>
@@ -68,7 +73,7 @@ function ArticuloCVUA() {
           atender la alerta.</li>
           <div className='flex mr-64' >
           <img src={AtenderAlerta3} alt="" 
-        className='mx-auto w-[300px] h-[100px]' /> <br />
+        className='mx-auto w-[320px] h-[104px]' /> <br />
           <p className='mt-6'>Si decidiste escalar la alerta, la siguiente notificación <br />
             aparecerá marcando con éxito la resolución de esta:</p>
           </div>
@@ -76,11 +81,11 @@ function ArticuloCVUA() {
           hayas puesto. </li>
           <div className='flex mr-64' >
           <img src={AtenderAlerta2} alt="" 
-        className='mx-auto w-[300px] h-[100px]' /> <br />
+        className='mx-auto w-[320px] h-[104px]' /> <br />
           <p className='mt-6'>Si decidiste atender la alerta, la siguiente notificación <br />
             aparecerá marcando con éxito la resolución de esta:</p>
           </div>
-        </ul>
+        </ul> <br />
         <p className='ml-48'><strong> Cómo agregar un comentario </strong> </p>
         <p className='ml-48'> <strong> Pasos: </strong> </p>
         <p className='ml-48'><strong> Paso 1: </strong> Sigue los mismos pasos de “¿Cómo ver una alerta?”. </p>
@@ -94,7 +99,7 @@ function ArticuloCVUA() {
           <li className="mb-2">Estatus</li>
           <li className="mb-2">Situación</li>
           <li className="mb-2">Evidencia</li>
-        </ol>
+        </ol> <br />
         <img src={AgregarComnt1} alt="" 
         className='mx-auto w-[900px] h-[700px]' /> <br />
         <p className='ml-48'> Una vez ingresada toda la información de acuerdo con tus datos, haz clic en “Agregar registro” para que Tramo pueda <br />
@@ -103,11 +108,13 @@ function ArticuloCVUA() {
         className='mx-auto w-[700px] h-[500px]' /> <br />
         <p className='ml-48'> Una notificación aparecerá mostrando la adicción. </p>
         <img src={AgregarComnt3} alt="" 
-        className='mx-auto w-[300px] h-[100px]' />
+        className='mx-auto w-[320px] h-[104px]' />
 
+      <a className='ml-20' href="#Inicio">
+      <HomeBttn />
+      </a>
         </div>
 
-<a href="#Inicio">Inicio</a>
 
       </>
     );

@@ -9,18 +9,18 @@ function Modules() {
     <div className={styles.module}>
       <div className={styles.headerModule}>
         <img src={IcoViajes} alt="" />
-        <h2 className={styles.moduleTitle}>Módulo de Viajes</h2>
+        <h2 className={styles.moduleTitle}>Viajes</h2>
       </div>
       <div className={styles.moduleText}
       style={{ cursor: 'pointer' }}>
 
-        <p><a className="hover:underline hover:text-blue-500" onClick={() => {navigate('/articles/como-esta-organizada-la-info')}}>
+        <p><a className="hover:underline hover:text-blue-800 text-blue-700" onClick={() => {navigate('/articles/como-esta-organizada-la-info')}}>
           ¿Como está organizada la información?
         </a></p>  
-        <p><a className="hover:underline hover:text-blue-500" onClick={() => {navigate('/articles/creacion-viaje-manual')}}>
+        <p><a className="hover:underline hover:text-blue-800 text-blue-700" onClick={() => {navigate('/articles/creacion-viaje-manual')}}>
         Creación de viaje manual
         </a></p> 
-        <p><a className="hover:underline hover:text-blue-500" onClick={() => {navigate('/articles/CRT-viaje')}} >
+        <p><a className="hover:underline hover:text-blue-800 text-blue-700" onClick={() => {navigate('/articles/CRT-viaje')}} >
         Cancelar, Reprogramar y Terminar viaje
         </a></p>  
       </div>

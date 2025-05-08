@@ -1,20 +1,19 @@
 
 import Header from '../../Header/Header.jsx'
 import BreadcrumbNav from '../../Header/Breadcrumb.jsx';
+import HomeBttn from '../../Header/HomeButton.jsx';
+
 import Importar1 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-1.png'
 import Importar2 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-2.png'
 import Importar3 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-3.png'
 import Importar4 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-4.png'
-import Importar5 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-5.png'
-import Importar6 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-6.png'
-import Importar7 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-7.png'
 import Importar8 from '../../assets/Imagenes-articulos/M-Unidades/Como importar unidades/Importar-8.png'
 
 function ArticuloCIU() { 
     return (
       <>
         <Header />
-        <BreadcrumbNav />
+        <div className='ml-44'> <BreadcrumbNav  /> </div>
         <div className='flex flex-col'>
         <h1 id='Inicio' className='text-center'>¿Como importar unidades? </h1>
         <h2 className='ml-48'>Resumen del artículo.</h2>
@@ -42,15 +41,18 @@ function ArticuloCIU() {
         <p className='ml-48'><strong>Nota: </strong> Unidades disponibles te mostrará la cantidad de unidades que podrás importar a Tramo, esto dependerá de las <br />
         unidades contratadas que tengas. </p>
         <img src={Importar4} alt="" 
-        className='mx-auto w-[700px] h-[700px]' />
+        className='mx-auto w-[600px] h-[400px]' />
         <p className='ml-48'> <strong> Paso 5: </strong> Una vez completados correctamente los pasos anteriores, recibirás una notificación confirmando que las unidades han sido importadas y creadas exitosamente en Tramo.  </p>
         <img src={Importar8} alt="" 
-        className='mx-auto w-[400px] h-[200px]' />
+        className='mx-auto w-[420px] h-[164px]' />
+
+        <a className='ml-20' href="#Inicio">
+        <HomeBttn />
+        </a>
 
         </div>
         
 
-<a href="#Inicio">Inicio</a>
 
       </>
     );

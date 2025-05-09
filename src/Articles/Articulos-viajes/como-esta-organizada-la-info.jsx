@@ -19,16 +19,17 @@ function ArticuloCEOLI() {
       <>
         <Header />
         <div className='ml-44'> <BreadcrumbNav  /> </div>
+        <div className='ml-[125px] w-[1024px] h-[190px] bg-gray-600'> </div>
         <div className='flex flex-col'>
-        <h1 id='Inicio' className='text-center'> ¿Cómo está organizada la información en Tramo? </h1>
-        <h2 className='text-center'> Conoce tu Módulo de Viaje </h2>
-        <h2 className='ml-48'> <strong> Resumen del artículo. </strong></h2>
-        <p className='ml-48'>En este articulo conocerás la herramienta de gestión de viajes de Tramo, también conocida como “Módulo de viajes”, <br />
-        a continuación, verás toda la información que puedes encontrar en este Módulo así también como links con más <br />
-        información para los diferentes puntos del Módulo de viajes   </p>
+        <h1 id='Inicio' className='ml-32'> ¿Cómo está organizada la información en Tramo? </h1>
+        <h2 className='ml-32'> Conoce tu Módulo de Viaje </h2>
+        <h2 className='ml-32'> <strong> Resumen del artículo. </strong></h2>
+        <p className='ml-32'>En este articulo conocerás la herramienta de gestión de viajes de Tramo, también conocida como “Módulo de viajes”, a continuación, <br /> 
+        verás toda la información que puedes encontrar en este Módulo así también como links con más información para los diferentes puntos <br />
+        del Módulo de viajes   </p>
         <img src={Tabs1} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
-        <ol className='ml-48 list-decimal list-inside'>  
+        <ol className='ml-32 list-decimal list-inside'>  
           <li>  {/* 1 */} 
           Aquí podrás crear un nuevo viaje y poder agregarlo al módulo de viaje. <br /> <br />
           <img src={Button} alt="" 
@@ -36,8 +37,8 @@ function ArticuloCEOLI() {
           </li> <br />
 
           <li>  {/* 2 */}
-          Estas son las pestañas del Módulo de viaje, aquí podrás aislar tus viajes con la información que quieras como por ejemplo los <br />
-          viajes que cuentan con alertas, viajes programados, viajes en ruta, viajes finalizados. <br /> <br />
+          Estas son las pestañas del Módulo de viaje, aquí podrás aislar tus viajes con la información que quieras como por ejemplo los viajes que cuentan <br />
+          con alertas, viajes programados, viajes en ruta, viajes finalizados. <br /> <br />
           <img src={Tabs} alt="" 
           className=' w-[800px] h-[40px]' />
           </li> <br />

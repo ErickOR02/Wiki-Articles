@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import ArticuloCIU from '../Articles/Articulos-unidades/Importar-unidades';
 // Módulo de Unidades ⬆️
-import ArticuloCVUA from '../Articles/Articulos-alertas/como-ver-una-alerta-atenderla-y-agregar-un-comentario';
+import ArticuloCVUA from '../Articles/Articulos-alertas/Como-ver-una-alerta-atenderla-y-agregar-un-comentario';
 // Módulo de Alertas ⬆️
 import ArticuloCCMS from '../Articles/Articulos-configuracion/como-configurar-mi-suscripción.jsx';
 import ArticuloCAYCA from '../Articles/Articulos-configuracion/como-agregar-y-configurar-alertas';

@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import  HomeIcon from '../assets/square-arrow-up.svg'
+import  HomeIcon from '../assets/arrow-up.svg'
 
-const HomeBttn = () => {
+const ScrollUpBttn = () => {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top
+  };
+
   return (
     <StyledWrapper>
-      <button>
-        <img src={HomeIcon} alt='Home Icon' className='Icon'  />
+      <button onClick={handleClick}>
+        <img src={HomeIcon} alt="Home Icon" className="Icon" />
       </button>
     </StyledWrapper>
   );
-}
+};
+
 
 const StyledWrapper = styled.div`
   button {
@@ -19,19 +24,19 @@ const StyledWrapper = styled.div`
     padding: 15px 15px;
     border-radius: 10px;
     cursor: pointer;
-    background-color:rgb(0, 69, 118);
+    background-color: #0077CC;
   }
 
   button:hover {
-    background: #0077cc;
+    background:rgb(0, 65, 111);
     transition: 0.5s;
   }
 
   button svg {
-    color: #0077cc;
+    color: #0077CC;
   }`;
 
-export default HomeBttn;
+export default ScrollUpBttn;
 
 
 // Ajustar icono de boton y agregarlo a los articulos.

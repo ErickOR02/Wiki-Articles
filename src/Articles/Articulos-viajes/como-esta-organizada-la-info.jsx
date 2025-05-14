@@ -1,7 +1,8 @@
 
 import Header from '../../Header/Header.jsx'
 import BreadcrumbNav from '../../Header/Breadcrumb.jsx';
-import HomeBttn from '../../Header/HomeButton.jsx';
+import ScrollUpBttn from '../../Header/ScrollUpBttn.jsx';
+import HomeBttn from '../../Header/HomeBttn.jsx';
 
 import Emptybttn from '../../assets/Imagenes-articulos/M-Viajes/Como esta organizada la información/ButtonEmpty.png'
 import FilterBttn from '../../assets/Imagenes-articulos/M-Viajes/Como esta organizada la información/FilterButton.png'
@@ -18,18 +19,20 @@ function ArticuloCEOLI() {
     return (
       <>
         <Header />
-        <div className='ml-44'> <BreadcrumbNav  /> </div>
-        <div className='ml-[125px] w-[1024px] h-[190px] bg-gray-600'> </div>
+        <div className='ml-28'> <BreadcrumbNav  /> </div>
+        <div className='ml-[125px]'> <HomeBttn /> </div>
+        
         <div className='flex flex-col'>
-        <h1 id='Inicio' className='ml-32'> ¿Cómo está organizada la información en Tramo? </h1>
-        <h2 className='ml-32'> Conoce tu Módulo de Viaje </h2>
-        <h2 className='ml-32'> <strong> Resumen del artículo. </strong></h2>
-        <p className='ml-32'>En este articulo conocerás la herramienta de gestión de viajes de Tramo, también conocida como “Módulo de viajes”, a continuación, <br /> 
+        <div className="ml-32 w-[1024px] break-words">
+        <h1 className='text-2xl font-bold' > ¿Cómo está organizada la información en Tramo? </h1>
+        <h2 className='text-xl font-bold'> Conoce tu Módulo de Viaje </h2>
+        <h2 className='text-xl font-bold'> Resumen del artículo. </h2>
+        <p>En este articulo conocerás la herramienta de gestión de viajes de Tramo, también conocida como “Módulo de viajes”, a continuación, <br /> 
         verás toda la información que puedes encontrar en este Módulo así también como links con más información para los diferentes puntos <br />
         del Módulo de viajes   </p>
         <img src={Tabs1} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
-        <ol className='ml-32 list-decimal list-inside'>  
+        <ol className=' list-decimal list-inside'>  
           <li>  {/* 1 */} 
           Aquí podrás crear un nuevo viaje y poder agregarlo al módulo de viaje. <br /> <br />
           <img src={Button} alt="" 
@@ -89,9 +92,9 @@ function ArticuloCEOLI() {
           </li>
         </ol>
 
-        <a className='ml-20' href="#Inicio">
-      <HomeBttn />
-      </a>
+        </div>
+      <ScrollUpBttn />
+
 
 
         </div>

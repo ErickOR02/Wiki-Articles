@@ -1,7 +1,8 @@
 
 import Header from '../../Header/Header.jsx'
 import BreadcrumbNav from '../../Header/Breadcrumb.jsx';
-import HomeBttn from '../../Header/HomeButton.jsx';
+import ScrollUpBttn from '../../Header/ScrollUpBttn.jsx';
+import HomeBttn from '../../Header/HomeBttn.jsx';
 
 
 import CVM1 from '../../assets/Imagenes-articulos/M-Viajes/Creacion de viaje manual/C1.png'
@@ -15,30 +16,32 @@ function ArticuloCVM() {
     return (
       <>
         <Header />
-        <div className='ml-44'> <BreadcrumbNav  /> </div>
-        <div className='ml-[125px] w-[1024px] h-[190px] bg-gray-600'> </div>
+        <div className='ml-28'> <BreadcrumbNav  /> </div>
+        <div className='ml-[125px]'> <HomeBttn /> </div>
+
         <div className='flex flex-col'>
-        <h1 id='Inicio' className='text-center'> Creación de viaje manual </h1>
-        <h2 className='ml-32'> <strong> Resumen del artículo. </strong></h2>
-        <p className='ml-32'> Existen dos formas de crear viajes en Tramo.   </p>
-        <ol className='ml-32 list-decimal list-inside'>
+        <div className="ml-32 w-[1024px] break-words">
+        <h1 className='text-2xl font-bold'> Creación de viaje manual </h1>
+        <h2 className='text-xl font-bold'> <strong> Resumen del artículo. </strong></h2>
+        <p> Existen dos formas de crear viajes en Tramo.   </p>
+        <ol className='list-decimal list-inside'>
           <li> La primera es de forma manual, en la que los viajes se crean de forma individual.  </li>
           <li> La segunda es de forma masiva, en la que varios viajes pueden cargarse a Tramo por medio de un layout en Excel. </li>
         </ol> <br />
-        <p className='ml-32'> En este artículo aprenderás a crear un viaje de forma manual. </p>
+        <p> En este artículo aprenderás a crear un viaje de forma manual. </p>
         <img src={CVM1} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
         
-        <p className='ml-32'> <strong> Pasos: </strong>   </p>
-        <p className='ml-32'> <strong> Paso 1: </strong> Dentro del módulo de viajes haz clic en el botón “nuevo viaje” ubicado en la esquina superior derecha de la pantalla. </p>
-        <p className='ml-32'> <strong> Paso 2: </strong> Aparecerá una ventana donde podrás llenar toda la información del viaje. Hay tres secciones que deben llenarse: Detalles, <br />
+        <p > <strong> Pasos: </strong>   </p>
+        <p > <strong> Paso 1: </strong> Dentro del módulo de viajes haz clic en el botón “nuevo viaje” ubicado en la esquina superior derecha de la pantalla. </p>
+        <p > <strong> Paso 2: </strong> Aparecerá una ventana donde podrás llenar toda la información del viaje. Hay tres secciones que deben llenarse: Detalles, <br />
         Logística y Asignación. A continuación, detallaremos que debes llenar en cada sección.  </p>
         <img src={CVM2} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
         
-        <p className='ml-32'> <strong> Paso 3: </strong> En la sección “Detalles” podrás ingresar la información básica del viaje. Podrás ver que hay distintos campos dentro de la sección, <br />
+        <p > <strong> Paso 3: </strong> En la sección “Detalles” podrás ingresar la información básica del viaje. Podrás ver que hay distintos campos dentro de la sección, <br />
         no es necesario llenar los campos que tienen la palabra “Opcional” debajo de ellos. </p>
-        <ol className='ml-60 list-decimal list-inside'>
+        <ol className='ml-20 list-decimal list-inside'>
           <li> ID externo (opcional): Aquí puedes ingresar un ID externo que manejen dentro de tu empresa.  </li>
           <li> Tipo de viaje (obligatorio): En este campo aparecerá una lista desplegable en la cual debes seleccionar el tipo de viaje. <br />
           Aparecerán los tipos de viajes que hayan sido dados de alta en el catálogo correspondiente. Si el tipo de viaje que necesitas <br />
@@ -53,12 +56,12 @@ function ArticuloCVM() {
           <li> Descripción del viaje (opcional): En este campo puedes escribir una descripción breve del viaje en caso de ser necesario.  </li>
         </ol> <br />
 
-        <p className='ml-32'> <strong> Paso 4: </strong> En la sección “Logística” podremos ingresar los puntos que conformarán la ruta de nuestro viaje. Por default tendremos dos <br />
+        <p > <strong> Paso 4: </strong> En la sección “Logística” podremos ingresar los puntos que conformarán la ruta de nuestro viaje. Por default tendremos dos <br />
         puntos, A (Inicio) y B (Fin).  Para agregar un nuevo punto basta con hacer clic en el botón “Agregar punto” ubicado en la parte inferior.  </p>
 
-        <p className='ml-32'> <strong> Paso 5: </strong> El siguiente paso en configurar los puntos que conformarán nuestro viaje. Los siguientes puntos deberán seguirse para cada <br />
+        <p > <strong> Paso 5: </strong> El siguiente paso en configurar los puntos que conformarán nuestro viaje. Los siguientes puntos deberán seguirse para cada <br />
         punto que agregues al viaje. </p>
-        <ol className='ml-60 list-decimal list-inside'>
+        <ol className='ml-20 list-decimal list-inside'>
           <li> Ubicación (obligatorio): En este campo aparecerá una lista desplegable en la cual debes seleccionar la ubicación del punto. <br />
           Aparecerán las ubicaciones que hayan sido dadas de alta en el catálogo correspondiente. Si la ubicación que necesitas no <br />
           aparece en el listado puedes crearla directamente haciendo clic en “Nuevo ubicación”. </li>
@@ -73,8 +76,8 @@ function ArticuloCVM() {
         </ol> <br />
         <img src={CVM3} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
-        <p className='ml-32'> <strong> Paso 6: </strong> En la sección “Asignación” podremos asignar la línea transportista, unidades y los operadores para el nuevo viaje: </p>
-        <ol className='ml-60 list-decimal list-inside'>
+        <p > <strong> Paso 6: </strong> En la sección “Asignación” podremos asignar la línea transportista, unidades y los operadores para el nuevo viaje: </p>
+        <ol className='ml-20 list-decimal list-inside'>
           <li> Línea transportista (obligatorio): En este campo aparecerá una lista desplegable en la cual debes seleccionar la línea <br />
           transportista que asignaremos. Aparecerán las diferentes líneas transportistas que hayan sido dadas de alta en el catálogo <br />
           correspondiente. Si la línea transportista que necesitas no aparece en el listado puedes crearla directamente haciendo clic <br />
@@ -93,15 +96,14 @@ function ArticuloCVM() {
         <img src={CVM4} alt="" 
         className='mx-auto w-[700px] h-[500px]' /> <br />
 
-        <p className='ml-32'> <strong> Paso 7: </strong> Una vez terminado el anterior paso, daremos clic en “Crear viaje” para así poder dar de alta el viaje con toda la información <br />
+        <p > <strong> Paso 7: </strong> Una vez terminado el anterior paso, daremos clic en “Crear viaje” para así poder dar de alta el viaje con toda la información <br />
         agregada. Una vez completado, la siguiente notificación aparecerá en la esquina inferior derecha de la pantalla indicando la creación <br />
         del nuevo viaje y el mismo aparecerá en nuestro módulo de viaje. </p>
         <img src={CVM5} alt=""
         className='mx-auto w-[450px] h-[200px]' />
 
-      <a className='ml-20' href="#Inicio">
-      <HomeBttn />
-      </a>
+        </div> 
+      <ScrollUpBttn />
 
         </div>
         

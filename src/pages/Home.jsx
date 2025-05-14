@@ -8,6 +8,7 @@ function Home() {
          <Header />
       <h2 className='text-center' >Todos los artículos</h2>
          <Allmodules />
+         <div className='mb-20'></div>
     </div>
   )
 }
